@@ -4,15 +4,16 @@
 #include "Log_old.h"
 
 
-enum Example {
-	A, B, C, D
+enum Example : char {
+	A=5, B, C, D
 };
 
 int main() {
 
+	//Log.Level info = 1;
 	//Log debugger
 	Log log;
-	log.SetLevel(log.LogLevelInfo);
+	log.SetLevel(Log::LevelInfo);
 	log.Error("Log Error");
 	log.Warn("Log Warning");
 	log.Info("Log Info");
