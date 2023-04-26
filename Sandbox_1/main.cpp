@@ -68,4 +68,9 @@ int main() {
 		word,
 		strlen(word),
 		sizeof(word) );
+
+	// If int is 4 bytes and array is 20 bytes theres 5 elements in the array -> 20/4 = 5(ints)
+	int myArray[] = { 10, 20, 30, 40, 50 };
+	std::cout << sizeof(myArray) << "\n";
+	std::cout << sizeof(int) << "\n";
 }
