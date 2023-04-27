@@ -2,27 +2,14 @@
 #include "c_math.h"
 #include "Log.h"
 #include "Log_old.h"
+#include "Entity.h"
 
-class Entity
-{
-public:
-	// Entity();
-	//~Entity();
-	float x, y;
-
-	void p_entity() {
-		std::cout << "Entity" << std::endl;
-	}
-	void Print() {
-		std::cout << x << " " << y << std::endl;
-	}
-
-private:
-
-};
 
 int main() {
-	Entity e;
+	// So you can initializ via contructor parameters
+	//Entity e;
+	Entity e(9.0, 5.0);
+	e.p_entity();
 	e.Print();
 
 	//Log debugger

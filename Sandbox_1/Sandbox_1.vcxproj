@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c_math.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="Log_old.h" />
   </ItemGroup>
