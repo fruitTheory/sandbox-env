@@ -6,11 +6,18 @@
 
 
 int main() {
-	// So you can initializ via contructor parameters
+	// So you can initialize via contructor parameters
 	//Entity e;
 	Entity e(9.0, 5.0);
 	e.p_entity();
 	e.Print();
+
+	// Fat entity inherits Entity
+	std::cout << "Size of Entity: " << sizeof(Entity) << std::endl;
+	std::cout << "Size of Entity: " << sizeof(FatEntity) << std::endl;
+
+	FatEntity Fat;
+	Fat.Print();
 
 	//Log debugger
 	Log log;

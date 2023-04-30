@@ -4,7 +4,7 @@ using std::cout;
 using  std::endl;
 
 
-int main() {
+void test() {
 
     for (int i = 1; i <= 10; i++) {
         if (i == 3)
@@ -34,5 +34,6 @@ int main() {
         cout << number << ", ";
     }
     cout << '\n';
+
 }
 
